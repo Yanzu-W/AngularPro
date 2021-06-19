@@ -1,1 +1,14 @@
-<h1>{{title}}</h1>
+<div id="intro" >
+    <h1>{{title}}</h1>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      
+      <mat-button-toggle mat-raised-button color="accent" routerLink="/dashboard">主页</mat-button-toggle>
+      
+      <mat-button-toggle mat-raised-button color="accent" routerLink="/heroes">管理</mat-button-toggle>
+
+      <mat-button-toggle mat-raised-button color="accent" routerLink="/">结业报告</mat-button-toggle>
+    
+    </mat-button-toggle-group>
+    <router-outlet></router-outlet>
+    <!-- <app-messages></app-messages> -->
+</div>

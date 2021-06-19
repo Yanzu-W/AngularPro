@@ -1,0 +1,36 @@
+/* AppComponent's private CSS styles */
+#intro{
+  position:relative;
+}
+#intro {
+  height: 100%;
+  background: url(".\img\dogbackground.png")no-repeat center center fixed;
+  -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+  -moz-background-size: cover;    /* 针对Firefox浏览器 */
+  -o-background-size: cover;      /* 针对Operallq */
+  background-size: cover;         /* 通用 */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+h1 {
+    margin-bottom: 0;
+    color: #f44336;
+    font-weight: bold;
+  }
+  nav a {
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: #3d3d3d;
+    border-radius: 4px;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: #42545C;
+  }
+  nav a.active {
+    background-color: black;
+  }

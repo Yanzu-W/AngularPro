@@ -1,0 +1,49 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+    color: #f44336;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  input {
+    font-size: 1em;
+    padding: .5rem;
+  }
+
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+  h2{
+    color:#eee;
+  }
+  h3{
+    color: #eee;
+    text-indent: 2em;
+    font-size: 10px;
+  }
+.modify{
+  font-size: 20px;
+  position: relative;
+}
+
+.describe{
+  width: 500px;
+}
+
+.buttons{
+  margin-right: 20px;
+}
+
+.example-card {
+  max-width: 400px;
+  }
+
+.change{
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}

@@ -1,0 +1,16 @@
+<div id="search">  
+  <form class="example-form">
+    <mat-form-field class="example-form-field">
+    <mat-label>Search Dog For More Details</mat-label>
+    <input matInput type="text" [matAutocomplete]="auto" #searchBox (input)="search(searchBox.value)" />  
+    <mat-icon matSuffix>search</mat-icon>
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option matNativeControl required  *ngFor="let hero of heroes$ | async" >
+        <mat-option matLine routerLink="/detail/{{hero.id}}">
+          {{hero.name}}
+        </mat-option>
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  </form>
+</div>

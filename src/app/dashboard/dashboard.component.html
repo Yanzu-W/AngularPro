@@ -1,0 +1,16 @@
+<h2 mat-stroked-button color="warn" class="title">Dogs</h2>
+<!-- <div class="heroes-menu">
+  <a *ngFor="let hero of heroes" mat-raised-button color="warn"
+      routerLink="/detail/{{hero.id}}">
+      {{hero.name}}
+  </a>
+</div> -->
+<div id="dash">
+<mat-tab-group mat-align-tabs="start">
+  <div *ngFor="let hero of heroes">
+  <mat-tab label="{{hero.name}}"><h2 class="tab">{{hero.describe}}</h2></mat-tab>
+  </div>
+</mat-tab-group>
+</div>
+
+<app-hero-search></app-hero-search>

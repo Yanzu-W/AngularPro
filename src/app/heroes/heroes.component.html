@@ -1,0 +1,40 @@
+<h2>Click For More Details:</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <button  mat-button id="list" routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    
+    <mat-icon  class="delete" title="delete hero" 
+    (click)="delete(hero)">close</mat-icon>
+    
+    </button>
+    <mat-divider class="line"></mat-divider>
+  </li>
+</ul>
+<div id="search">
+  <form class="example-form">
+  <mat-form-field  class="example-form-field">
+  <mat-label >Name </mat-label>
+  <input matInput type="text"  #heroName />
+  <mat-icon matSuffix>mode_edit</mat-icon>
+  </mat-form-field>
+  </form>
+  <form class="description">
+    <mat-form-field  class="example-form-field">
+    <mat-label >Description </mat-label>
+    <textarea  matInput type="text"  #heroDescribe ></textarea>
+    </mat-form-field>
+  </form>
+  <form class="description">
+    <mat-form-field  class="example-form-field">
+    <mat-label >Image URL </mat-label>
+    <input matInput type="text"  #img />
+    <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    </form>
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button mat-raised-button color="warn" class="add-button" (click)="add(heroName.value,heroDescribe.value,img.value); heroName.value=''">
+    Add Dog
+  </button>
+</div>
