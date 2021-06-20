@@ -27,6 +27,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
+import { ReportComponent } from './report/report.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import {MatCardModule} from '@angular/material/card';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    ReportComponent
   ],
   imports: [
     BrowserModule,
